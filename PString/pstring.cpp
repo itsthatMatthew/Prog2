@@ -6,13 +6,11 @@ PString::PString(const String& str) : String(str) {}
 
 PString::~PString() {}
 
-void PString::write(std::ostream& ostr) const
-{
+void PString::write(std::ostream& ostr) const {
     ostr << size() << c_str();
 }
 
-void PString::read(std::istream& istr)
-{
+void PString::read(std::istream& istr) {
     size_t sizebuf = 0;
     istr >> sizebuf >> std::noskipws; // ÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁ
     char* charbuf = new char[sizebuf+1];
