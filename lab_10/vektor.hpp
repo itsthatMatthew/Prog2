@@ -71,7 +71,7 @@ public:
     /// törli az adott intervallumba eső elemeket
     /// @param first - a törlendő intervalum eleje
     /// @param last - a törlendő intervallum vége
-	/// @return az első nem törölt elemre mutató iterátor, ha végéig törölt, akkor end()
+    /// @return az első nem törölt elemre mutató iterátor, ha végéig törölt, akkor end()
     iterator erase(iterator first, iterator last) {
         iterator ret = first;
         while (last != Array<T, maxsiz>::end())
